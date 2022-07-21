@@ -163,6 +163,8 @@
 
 
 <script>
+//import { create } from 'domain'
+
   export default {
     data: () => ({
       dialog: false,
@@ -216,9 +218,9 @@
       },
     },
 
-    created () {
+    /*created () {
       this.initialize()
-    },
+    },*/
 
     methods: {
       initialize () {
@@ -275,6 +277,20 @@
         }
         this.close()
       },
+      /*getStaffs(){
+        const path = 'http://localhost:5000/staffs';
+        axios.get(path)
+            .then((res) => {
+                this.staffs = res.data.staffs
+            })
+            .catch((error) =>{
+                console.error(error)
+            });
+      }*/
+      
     },
+    /*created(){
+        this.getStaffs();
+      },*/
   }
 </script>
